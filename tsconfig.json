@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "outDir": "./lib/",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "ES2015",
+    "moduleResolution": "node",
+    "target": "ES5",
+    "lib": ["es6", "dom", "es2017"],
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "allowJs": true,
+    "declaration": true,
+    "allowSyntheticDefaultImports": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "strictNullChecks": true
+  },
+  "include": [
+    "src/lib/**/*"
+  ]
+}
