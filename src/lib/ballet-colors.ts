@@ -98,6 +98,10 @@ export class BackgroundLinearGradientMotion extends LinearGradientMotion {
     element.style.background = this.makeBackgroundStyle(gradient);
   }
 
+  turnOff(element: HTMLElement): void {
+    element.style.removeProperty('background');
+  }
+
 }
 
 export class SVGLinearGradientMotion extends LinearGradientMotion {
@@ -113,6 +117,11 @@ export class SVGLinearGradientMotion extends LinearGradientMotion {
       stopElement.setAttribute('stop-color', stop.color.hexa());
       element.append(stopElement);
     }
+  }
+
+  turnOff(element: HTMLElement): void {
+    element.removeAttribute('gradientTransform');
+    element.innerHTML = '';
   }
 
 }
@@ -135,6 +144,10 @@ export class FillMotion extends ColorMotion<string, Color> {
 
   makeUsualStep(params: MotionParams) {
     params.element.style.fill = this.calcRGBA(this.start, this.end, params.delta).hexa();
+  }
+
+  turnOff(element: HTMLElement): void {
+    element.style.removeProperty('fill');
   }
 
 }
