@@ -37,6 +37,6 @@
   },
   "dependencies": {
     "color": "~4.2.3",
-    "ballet": "~0.0.1"
+    "ballet": "~0.0.3"
   }
 }
