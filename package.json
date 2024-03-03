@@ -1,6 +1,6 @@
 {
   "name": "ballet-colors",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "private": false,
   "description": "Color primitives for your scroll animation, such as linear-gradients.",
   "main": "lib/index.umd.js",
@@ -37,6 +37,6 @@
   },
   "dependencies": {
     "color": "~4.2.3",
-    "ballet": "~0.0.3"
+    "ballet": "~0.0.4"
   }
 }
